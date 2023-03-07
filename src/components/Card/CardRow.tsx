@@ -1,6 +1,7 @@
 import cardRowVariations from "@/constants/cardRowVariations";
 import { CardRowProps } from "@/types/cards";
-import getFontColor from "@/utils/colors";
+import { getFontColor } from "@/utils/colors";
+import ProgressBar from "../ProgressBar/ProgressBar";
 import styles from "./CardRow.module.css";
 
 function CardRow({
@@ -14,7 +15,10 @@ function CardRow({
   return variation === cardRowVariations.DETAIL ? (
     <div className={`${styles.detailRow} flex items-center justify-between h-20 mx-10 border-b-2 border-dashed border-sold-middle-gray`}>
       <div className="w-1/2 text-sold-dark-gray">{label}</div>
-      <h1 className={`w-1/2 text-right text-2xl font-semibold ${fontColor}`}>{value}</h1>
+      <div className="flex flex-col items-end w-1/2">
+        <h1 className={`w-full text-right text-2xl font-semibold ${fontColor}`}>{value}</h1>
+        <ProgressBar color={color} />
+      </div>
     </div>
   ) : (
     <div className={`${styles.totalRow} flex flex-col justify-center items-end h-20 px-10 bg-sold-semilight-gray last: rounded-b`}>
