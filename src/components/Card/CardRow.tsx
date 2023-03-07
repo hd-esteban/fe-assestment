@@ -9,6 +9,7 @@ function CardRow({
   color,
   label,
   value,
+  withProgressBar
 }: CardRowProps) {
   const fontColor = getFontColor(color)
   // return Card row based on variation passed
@@ -17,7 +18,7 @@ function CardRow({
       <div className="w-1/2 text-sold-dark-gray">{label}</div>
       <div className="flex flex-col items-end w-1/2">
         <h1 className={`w-full text-right text-2xl font-semibold ${fontColor}`}>{value}</h1>
-        <ProgressBar color={color} />
+        {withProgressBar && <ProgressBar color={color} />}
       </div>
     </div>
   ) : (

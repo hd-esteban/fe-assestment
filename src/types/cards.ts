@@ -15,6 +15,7 @@ export type CardRowProps = {
   color?: number;
   label?: string;
   value?: string;
+  withProgressBar?: boolean
 };
 
 export type CardRow = { id: number } & CardRowProps;

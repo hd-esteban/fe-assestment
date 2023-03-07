@@ -30,6 +30,7 @@ const cards: Cards = [
         color: colors.BLUE,
         label: "Customers we promoted you to",
         value: "500",
+        withProgressBar: true
       },
       {
         id: 3,

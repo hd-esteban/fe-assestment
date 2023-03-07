@@ -23,7 +23,7 @@ function Summary() {
           >
             {details && details?.length > 0 && (
               <CardSection>
-                {details?.map(({ id, variation, color, label, value }) => {
+                {details?.map(({ id, variation, color, label, value, withProgressBar }) => {
                   return (
                     <CardRow
                       key={id}
@@ -31,6 +31,7 @@ function Summary() {
                       color={color}
                       label={label}
                       value={value}
+                      withProgressBar={withProgressBar}
                     />
                   );
                 })}
