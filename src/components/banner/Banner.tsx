@@ -15,7 +15,7 @@ function Banner() {
       <div className="flex items-center justify-center bg-sold-dark-gray">
         <div className="container flex flex-col items-center justify-center mt-16 mb-12 h-96 md:h-56 md:flex-row md:justify-evenly">
           {/* Info */}
-          <div className="w-5/6 h-full md:w-5/12">
+          <div className="w-11/12 h-full md:w-5/12">
             <h1 className="text-2xl font-semibold text-white">
               SOLD.com Difference
             </h1>
@@ -30,22 +30,22 @@ function Banner() {
             </p>
           </div>
           {/* Card Container */}
-          <div className="w-5/6 h-full md:w-4/12">
+          <div className="w-11/12 h-full md:w-4/12">
             <div className="h-full p-6 rounded-lg bg-sold-light-gray">
               <p className="text-xs font-medium lg:text-sm h-1/6 text-sold-dark-gray">
                 In your zips over the last 18 months, we’ve originated:
               </p>
               {/* Statistics */}
               <div className="flex items-center justify-center pt-6 h-5/6">
-                <div className="flex flex-col justify-between w-1/2 h-full pl-3 pr-5 border-r lg:pl-6 lg:pr-10">
+                <div className="flex flex-col justify-between w-1/2 h-full pl-1 pr-3 border-r sm:pl-6 lg:pr-10">
                   <LineChart className={`w-6 h-6 md:w-8 md:h-8`} />
                   <h1 className="text-2xl font-medium lg:text-3xl">$20M</h1>
                   <p className="text-xs text-sold-dark-gray">in sales</p>
                 </div>
-                <div className="flex flex-col justify-between w-1/2 h-full pl-5 pr-3 lg:pl-10 lg:pr-6">
+                <div className="flex flex-col justify-between w-1/2 h-full pl-3 pr-1 sm:pl-10 lg:pr-6">
                   <PieChart className={`w-6 h-6 md:w-8 md:h-8`} />
                   <h1 className="text-2xl font-medium lg:text-3xl">$500K</h1>
-                  <p className="text-xs text-sold-dark-gray">
+                  <p className="overflow-hidden text-xs text-sold-dark-gray whitespace-nowrap text-ellipsis">
                     in Commissions (est)
                   </p>
                 </div>
