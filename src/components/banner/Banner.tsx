@@ -37,12 +37,12 @@ function Banner() {
               </p>
               {/* Statistics */}
               <div className="flex items-center justify-center pt-6 h-5/6">
-                <div className="flex flex-col justify-between w-1/2 h-full pl-1 pr-3 border-r sm:pl-6 lg:pr-10">
+                <div className="flex flex-col justify-between w-1/2 h-full pl-1 pr-3 border-r lg:pl-6 lg:pr-10">
                   <LineChart className={`w-6 h-6 md:w-8 md:h-8`} />
                   <h1 className="text-2xl font-medium lg:text-3xl">$20M</h1>
                   <p className="text-xs text-sold-dark-gray">in sales</p>
                 </div>
-                <div className="flex flex-col justify-between w-1/2 h-full pl-3 pr-1 sm:pl-10 lg:pr-6">
+                <div className="flex flex-col justify-between w-1/2 h-full pl-3 pr-1 lg:pl-10 lg:pr-6">
                   <PieChart className={`w-6 h-6 md:w-8 md:h-8`} />
                   <h1 className="text-2xl font-medium lg:text-3xl">$500K</h1>
                   <p className="overflow-hidden text-xs text-sold-dark-gray whitespace-nowrap text-ellipsis">
