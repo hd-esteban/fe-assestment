@@ -1,6 +1,7 @@
 import { Montserrat } from "next/font/google";
-import Banner from "@/components/banner/Banner";
-import Summary from "@/components/summary/Summary";
+import Banner from "@/components/Banner/Banner";
+import Summary from "@/components/Summary/Summary";
+import ScheduleCall from "@/components/ScheduleCall/ScheduleCall";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -14,6 +15,7 @@ function Dashboard() {
     >
       <Banner />
       <Summary />
+      <ScheduleCall />
     </div>
   );
 }

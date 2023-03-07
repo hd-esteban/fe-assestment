@@ -1,9 +1,9 @@
-import Card from "../card/Card";
-import CardRow from "../card/CardRow";
+import Card from "../Card/Card";
+import CardRow from "../Card/CardRow";
 import cards from "@/constants/cards";
-import CardSection from "../card/CardSection";
+import CardSection from "../Card/CardSection";
 
-function Content() {
+function Summary() {
   return (
     <div className="container mx-auto mt-12">
       <div className="flex items-center my-2.5">
@@ -58,4 +58,4 @@ function Content() {
   );
 }
 
-export default Content;
+export default Summary;

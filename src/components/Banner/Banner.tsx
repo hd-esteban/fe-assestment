@@ -1,8 +1,8 @@
 import factors from "@/constants/factors";
-import Button from "../button/Button";
-import ArrowDown from "../icons/ArrowDown";
-import LineChart from "../icons/LineChart";
-import PieChart from "../icons/PieChart";
+import Button from "../Button/Button";
+import ArrowDown from "../Icons/ArrowDown";
+import LineChart from "../Icons/LineChart";
+import PieChart from "../Icons/PieChart";
 import styles from "./Banner.module.css"
 
 function Banner() {
@@ -57,7 +57,7 @@ function Banner() {
       <div className={`${styles.referralsCard} flex justify-center items-center`}>
         {/* Sold Differences - Paragraph*/}
         <div className="container">
-          <div className="flex flex-col justify-between w-11/12 px-5 py-5 mx-auto rounded-lg shadow-lg md:pr-6 md:flex-row md:pl-14 shadow-sold-dark-gray-50 bg-sold-light-gray">
+          <div className="flex flex-col justify-between w-11/12 px-6 py-5 mx-auto rounded-lg shadow-lg md:pr-6 md:flex-row md:pl-14 shadow-sold-dark-gray-50 bg-sold-light-gray">
             <div className="w-full md:w-5/12">
               <p className="mb-4 text-base">
                 Our referrals are routed to the top performing agents in our
@@ -89,7 +89,7 @@ function Banner() {
                     25 <ArrowDown />
                   </h1>
                   <Button
-                    className="hidden md:block md:w-1/4"
+                    className="hidden overflow-hidden md:block md:w-1/4 whitespace-nowrap text-ellipsis "
                     text="Learn more"
                   ></Button>
                 </div>

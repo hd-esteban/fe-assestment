@@ -1,6 +1,6 @@
-import Leads from "@/components/icons/Leads";
-import HappyFace from "@/components/icons/HappyFace";
-import SadFace from "@/components/icons/SadFace";
+import Leads from "@/components/Icons/Leads";
+import HappyFace from "@/components/Icons/HappyFace";
+import SadFace from "@/components/Icons/SadFace";
 import { Cards } from "@/types/cards";
 import cardRowVariations from "./cardRowVariations";
 import colors from "./colors";
