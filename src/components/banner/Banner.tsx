@@ -3,6 +3,7 @@ import Button from "../button/Button";
 import ArrowDown from "../icons/ArrowDown";
 import LineChart from "../icons/LineChart";
 import PieChart from "../icons/PieChart";
+import styles from "./Banner.module.css"
 
 function Banner() {
   return (
@@ -11,10 +12,10 @@ function Banner() {
       role="banner"
     >
       {/* Sold Differences */}
-      <div className="flex flex-col items-center bg-sold-dark-gray">
+      <div className="flex items-center justify-center bg-sold-dark-gray">
         <div className="container flex flex-col items-center justify-center mt-16 mb-12 h-96 md:h-56 md:flex-row md:justify-evenly">
           {/* Info */}
-          <div className="w-11/12 h-full m-2 md:w-5/12">
+          <div className="w-5/6 h-full md:w-5/12">
             <h1 className="text-2xl font-semibold text-white">
               SOLD.com Difference
             </h1>
@@ -29,19 +30,19 @@ function Banner() {
             </p>
           </div>
           {/* Card Container */}
-          <div className="w-11/12 h-full md:w-4/12">
+          <div className="w-5/6 h-full md:w-4/12">
             <div className="h-full p-6 rounded-lg bg-sold-light-gray">
-              <p className="text-xs font-medium md:text-sm h-1/6 text-sold-dark-gray">
+              <p className="text-xs font-medium lg:text-sm h-1/6 text-sold-dark-gray">
                 In your zips over the last 18 months, we’ve originated:
               </p>
               {/* Statistics */}
               <div className="flex items-center justify-center pt-6 h-5/6">
-                <div className="flex flex-col w-1/2 h-full pl-6 pr-10 border-r justify-evenly">
+                <div className="flex flex-col justify-between w-1/2 h-full pl-3 pr-5 border-r lg:pl-6 lg:pr-10">
                   <LineChart className={`w-6 h-6 md:w-8 md:h-8`} />
                   <h1 className="text-2xl font-medium lg:text-3xl">$20M</h1>
                   <p className="text-xs text-sold-dark-gray">in sales</p>
                 </div>
-                <div className="flex flex-col w-1/2 h-full pl-10 pr-6 justify-evenly">
+                <div className="flex flex-col justify-between w-1/2 h-full pl-5 pr-3 lg:pl-10 lg:pr-6">
                   <PieChart className={`w-6 h-6 md:w-8 md:h-8`} />
                   <h1 className="text-2xl font-medium lg:text-3xl">$500K</h1>
                   <p className="text-xs text-sold-dark-gray">
@@ -53,13 +54,12 @@ function Banner() {
           </div>
         </div>
       </div>
-      <div className="relative h-96 md:h-52">
-        <div className="h-1/2 bg-sold-dark-gray"></div>
+      <div className={`${styles.referralsCard} flex justify-center items-center`}>
         {/* Sold Differences - Paragraph*/}
-        <div className="container absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+        <div className="container">
           <div className="flex flex-col justify-between w-11/12 px-5 py-5 mx-auto rounded-lg shadow-lg md:pr-6 md:flex-row md:pl-14 shadow-sold-dark-gray-50 bg-sold-light-gray">
             <div className="w-full md:w-5/12">
-              <p className="mb-4 font-base">
+              <p className="mb-4 text-base">
                 Our referrals are routed to the top performing agents in our
                 network. Rankings are based on numerous factors, including:
               </p>
