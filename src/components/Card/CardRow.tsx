@@ -15,16 +15,24 @@ function CardRow({
   // return Card row based on variation passed
   return variation === cardRowVariations.DETAIL ? (
     <div className={`${styles.detailRow} flex items-center justify-between h-20 mx-10 border-b-2 border-dashed border-sold-middle-gray`}>
-      <div className="w-1/2 text-sold-dark-gray">{label}</div>
-      <div className="flex flex-col items-end w-1/2">
+      <div className="w-1/2">
+        <h3 className="text-sold-dark-gray">{label}</h3>
+      </div>
+      <div className="flex flex-col items-end w-1/2 h-full justify-evenly">
         <h1 className={`w-full text-right text-2xl font-semibold ${fontColor}`}>{value}</h1>
         {withProgressBar && <ProgressBar color={color} />}
       </div>
     </div>
   ) : (
-    <div className={`${styles.totalRow} flex flex-col justify-center items-end h-20 px-10 bg-sold-semilight-gray last: rounded-b`}>
-      <div className="flex items-center h-1/2">{label}</div>  
-      <div className={`flex items-center h-1/2 text-2xl font-medium	${fontColor}`}>{value}</div>
+    <div className={`${styles.totalRow} flex flex-col items-end h-20 px-10 bg-sold-semilight-gray last: rounded-b`}>
+      <div className="flex items-center h-1/2">
+        <h3>{label}</h3>
+      </div>  
+      <div className={`flex items-center h-1/2`}>
+        <h3 className={`text-2xl font-medium	${fontColor}`}>
+          {value}
+        </h3>
+      </div>
       <div className="w-full border-b border-sold-semi-dark-gray">{" "}</div>
     </div>
   );

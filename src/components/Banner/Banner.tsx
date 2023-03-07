@@ -88,8 +88,9 @@ function Banner() {
                   <h1 className="flex items-center justify-center w-1/3 text-4xl font-bold md:justify-start md:w-1/4 text-sold-orange display">
                     25 <ArrowDown />
                   </h1>
+                  {/** Another option would be to trim the text with elipsis: className="hidden overflow-hidden md:block md:w-1/4 whitespace-nowrap text-ellipsis" */}
                   <Button
-                    className="hidden overflow-hidden md:block md:w-1/4 whitespace-nowrap text-ellipsis "
+                    className="hidden md:block md:w-1/4"
                     text="Learn more"
                   ></Button>
                 </div>

@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 function Dashboard() {
   return (
     <div
-      className={`dashboard ${montserrat.variable} font-sans h-screen py-10`}
+      className={`dashboard ${montserrat.variable} font-sans py-10`}
     >
       <Banner />
       <Summary />

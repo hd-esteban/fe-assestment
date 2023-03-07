@@ -4,7 +4,7 @@ function Card({ icon, title, children }: CardProps) {
   return (
     <div className="w-full p-2 h-138 md:w-1/2 lg:w-1/3 ">
       <div className="h-full border rounded border-sold-middle-gray">
-        <div className="mx-10 mt-10 mb-4">
+        <div className="mx-10 mt-10 mb-3.5">
           {icon}
         </div>
         {title && (
