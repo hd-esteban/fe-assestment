@@ -25,7 +25,7 @@ module.exports = {
         sans: ['var(--font-montserrat)', ...fontFamily.sans],
       },
       spacing: {
-        '128': '32rem',
+        '138': '34.5rem',
       }
     },
   },

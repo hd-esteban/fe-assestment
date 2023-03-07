@@ -7,8 +7,8 @@ function Content() {
   return (
     <div className="container mx-auto mt-12">
       <div className="flex items-center my-2.5">
-        <div className="w-4 h-8 mr-3 rounded bg-sold-orange"></div>
-        <p className="">
+        <div className="w-4 h-8 mx-3 rounded bg-sold-orange"></div>
+        <p>
           Since you joined our network, here’s what we’ve been up to in your zip
           codes:
         </p>

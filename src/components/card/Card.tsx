@@ -2,8 +2,8 @@ import { CardProps } from "@/types/cards";
 
 function Card({ icon, title, children }: CardProps) {
   return (
-    <div className="w-1/3 p-2">
-      <div className="border rounded border-sold-middle-gray">
+    <div className="w-1/3 p-2 h-138">
+      <div className="h-full border rounded border-sold-middle-gray">
         <div className="mx-10 mt-10 mb-4">
           {icon}
         </div>
