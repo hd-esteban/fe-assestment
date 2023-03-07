@@ -1,0 +1,7 @@
+.detailRow:first-child h1 {
+  @apply text-3xl font-semibold;
+}
+
+.totalRow:last-child div {
+  @apply border-none;
+} 
