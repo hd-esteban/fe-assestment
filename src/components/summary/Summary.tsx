@@ -8,13 +8,13 @@ function Content() {
     <div className="container mx-auto mt-12">
       <div className="flex items-center my-2.5">
         <div className="w-4 h-8 mx-3 rounded bg-sold-orange"></div>
-        <p>
+        <p className="font-semibold">
           Since you joined our network, here’s what we’ve been up to in your zip
           codes:
         </p>
       </div>
       {/** Cards */}
-      <div className="flex">
+      <div className="flex flex-col flex-wrap md:flex-row">
         {cards.map(({ id, icon, title, details, totals }) => (
           <Card
             key={id}
